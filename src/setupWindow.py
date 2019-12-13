@@ -133,17 +133,12 @@ class DeepinScrotSetup:
         controlBox.pack_start(cancelButton)
         controlBox.pack_start(applyButton)
         
-        
-        
         self.window.add(self.bodyAlign)
         self.bodyAlign.add(self.generalMainbox)
         self.generalMainbox.pack_start(imageSetupFrame)
         self.generalMainbox.pack_start(saveProjectFrame)
         self.generalMainbox.pack_start(controlAlign)
-        
-
-        
-
+        self.current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
         
         self.window.show_all()
         gtk.main()
@@ -157,7 +152,7 @@ class DeepinScrotSetup:
         window.set_title("Deepin Scrot")
         window.set_default_size(300, 517)
         window.set_resizable(False)
-        window.set_icon_from_file("../theme/logo/deepin-scrot.ico")
+        window.set_icon_from_file(self.current_path + "../theme/logo/deepin-scrot.ico")
         
         return window
         

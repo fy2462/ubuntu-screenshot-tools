@@ -36,6 +36,7 @@ class tipWindow():
         self.alpha = 1
         self.paddingX = 10
         self.content = content
+        self.current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
         
         self.tipWindow = gtk.Window(gtk.WINDOW_TOPLEVEL)
         self.tipWindow.set_keep_above(True)
@@ -43,7 +44,7 @@ class tipWindow():
         self.tipWindow.set_decorated(False)
         self.tipWindow.set_accept_focus(False)
         self.tipWindow.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse("black"))
-        self.tipWindow.set_icon_from_file("../theme/logo/deepin-scrot.ico")
+        self.tipWindow.set_icon_from_file(self.current_path + "../theme/logo/deepin-scrot.ico")
         self.tipWindow.set_opacity(1)
         self.tipWindow.set_skip_taskbar_hint(True)
         self.tipWindow.set_skip_pager_hint(True)
@@ -111,7 +112,7 @@ class countdownWindow():
         self.tipWindow.set_decorated(False)
         self.tipWindow.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse("black"))
         self.tipWindow.set_accept_focus(False)
-        self.tipWindow.set_icon_from_file("../theme/logo/deepin-scrot.ico")
+        self.tipWindow.set_icon_from_file(self.current_path + "../theme/logo/deepin-scrot.ico")
         self.tipWindow.set_opacity(0.8)
         self.tipWindow.move(screenWidth - 200 , 34)
         self.tipWindow.connect('expose-event', self.tipExpose)
