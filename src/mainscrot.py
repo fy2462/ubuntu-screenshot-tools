@@ -1124,7 +1124,7 @@ class MainScrot:
         self.destroy(self.window)
         
          # tipWindow
-        cmd = ('python', 'tipswindow.py', tipContent)
+        cmd = ('python', current_path + 'tipswindow.py', tipContent)
         subprocess.Popen(cmd)
 
         
