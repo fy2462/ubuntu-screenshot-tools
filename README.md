@@ -4,4 +4,4 @@
   ./install.sh
 
 
-Remind: need the super privilege
+××Remind××: need the super privilege
