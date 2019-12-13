@@ -1,0 +1,5 @@
+*.pyc
+.#*
+repos.sh
+*.mo
+locale/
