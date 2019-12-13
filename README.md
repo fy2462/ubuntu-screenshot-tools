@@ -3,6 +3,7 @@
 ## Dependency
 
 sudo apt-get install python-gtk2 libcanberra-gtk-module
+
 sudo pip install Xlib
 
 ## Setup
