@@ -1,4 +1,4 @@
-# Snapshot tools for linux deepin.
+# Snapshot tools for linux ubuntu.
 
 ## Setup
   ./install.sh
