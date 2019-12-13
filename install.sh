@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Current Path is ${DIR}"
 sudo cp -R "${DIR}" $TARGET_DIR
 cd "${TARGET_DIR}"
-sudo ./updateTranslate.sh
+sudo ./scripts/updateTranslate.sh
 echo "Config Done"
 set +e
 sudo rm -f /usr/bin/deepinScrot
